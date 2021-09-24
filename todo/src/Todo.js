@@ -1,7 +1,7 @@
 import React from "react"
-import List from './List'
-import Item from './Item'
-import TodoForm from './TodoForm'
+import List from './components/List'
+import Item from './components/Item'
+import TodoForm from './components/TodoForm'
 import './Todo.css'
 
 
