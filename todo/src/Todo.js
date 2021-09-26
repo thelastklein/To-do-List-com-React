@@ -59,12 +59,12 @@ function Todo(){
     }
 
     return (<div className="container">
-               <header className="header"><h1>Todo</h1> <button onClick={()=>{setShowModal(true)}} className="addbutton">+</button></header> 
-                {/*<TodoForm onAddItem={onAddItem}></TodoForm>*/}
+               <header className="header"><h1>Lista de Tarefas</h1> <button onClick={()=>{setShowModal(true)}} className="addbutton">+</button></header> 
+                
 
                 <List onDone={onDone} onItemDeleted={onItemDeleted} items={items}></List>
 
-                <Modal show={showModal} onHideModal={onHideModal}><TodoForm onAddItem={onAddItem}></TodoForm></Modal>
+                <Modal show={showModal} onHideModal={onHideModal}><p className="p">Digite uma nova Tarefa</p><TodoForm onAddItem={onAddItem}></TodoForm></Modal>
            </div>)
 
 }
